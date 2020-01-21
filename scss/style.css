@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 3.5vw;
+  color: #fff;
+  overflow: hidden;
+}
+
+.strips {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.strips #strip1 {
+  background: #244F75;
+  left: 0;
+  animation: strip1 ease-in-out 0.8s;
+}
+.strips #strip2 {
+  background: #60BFBF;
+  left: 20%;
+  animation: strip2 ease-in-out 0.8s;
+}
+.strips #strip3 {
+  background: #8C4B7E;
+  left: 40%;
+  animation: strip3 ease-in-out 0.8s;
+}
+.strips #strip4 {
+  background: #F8BB44;
+  left: 60%;
+  animation: strip4 ease-in-out 0.8s;
+}
+.strips #strip5 {
+  background: #F24B4B;
+  left: 80%;
+  animation: strip5 ease-in-out 0.8s;
+}
+.strips .strip {
+  position: absolute;
+  width: 20%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.strips .strip .strip-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.strips .strip .strip-content .strip-title {
+  display: block;
+  margin: 0;
+  position: relative;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
