@@ -13,7 +13,7 @@ body {
   overflow: hidden;
 }
 
-.strips {
+.stripes {
   min-height: 100vh;
   display: flex;
   width: 100%;
@@ -21,38 +21,33 @@ body {
   overflow: hidden;
   text-align: center;
 }
-.strips #strip1 {
-  background: #244F75;
+.stripes #stripe1 {
   left: 0;
-  animation: strip1 ease-in-out 0.8s;
+  animation: stripe1 ease-in-out 1s;
 }
-.strips #strip2 {
-  background: #60BFBF;
+.stripes #stripe2 {
   left: 20%;
-  animation: strip2 ease-in-out 0.8s;
+  animation: stripe2 ease-in-out 0.8s;
 }
-.strips #strip3 {
-  background: #8C4B7E;
+.stripes #stripe3 {
   left: 40%;
-  animation: strip3 ease-in-out 0.8s;
+  animation: stripe3 ease-in-out 0.8s;
 }
-.strips #strip4 {
-  background: #F8BB44;
+.stripes #stripe4 {
   left: 60%;
-  animation: strip4 ease-in-out 0.8s;
+  animation: stripe4 ease-in-out 0.8s;
 }
-.strips #strip5 {
-  background: #F24B4B;
+.stripes #stripe5 {
   left: 80%;
-  animation: strip5 ease-in-out 0.8s;
+  animation: stripe5 ease-in-out 0.8s;
 }
-.strips .strip {
+.stripes .stripe {
   position: absolute;
   width: 20%;
   min-height: 100vh;
   overflow: hidden;
 }
-.strips .strip .strip-content {
+.stripes .stripe .stripe-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,13 +57,13 @@ body {
   width: 100%;
   height: 100%;
 }
-.strips .strip .strip-content .strip-title {
+.stripes .stripe .stripe-content .stripe-title {
   display: block;
   margin: 0;
   position: relative;
   color: #fff;
 }
-.strips .strip::before {
+.stripes .stripe::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -82,10 +77,102 @@ body {
   transform: skew(30deg) scaleY(1) translate(0, 0);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.strips .strip:hover::before {
+.stripes .stripe:hover::before {
   transform: skew(0deg) scale(3) translate(0, 0);
   transform: skew(0deg) scale(3) translate(0, 0);
   opacity: 0.1;
+}
+
+@keyframes stripe1 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes stripe2 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe2 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes stripe3 {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe3 {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes stripe4 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe4 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes stripe5 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe5 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+#stripe1 {
+  background: #244F75;
+}
+
+#stripe2 {
+  background: #60BFBF;
+}
+
+#stripe3 {
+  background: #8C4B7E;
+}
+
+#stripe4 {
+  background: #F8BB44;
+}
+
+#stripe5 {
+  background: #F24B4B;
 }
 
 /*# sourceMappingURL=style.css.map */

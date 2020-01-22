@@ -1,0 +1,7 @@
+@mixin backgroundColor($start, $colors) {
+    @for $i from $start through length($colors) {
+        #stripe#{$i} {
+            background: nth($colors, $i);
+        }
+    }
+}
